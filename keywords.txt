@@ -1,0 +1,31 @@
+#######################################
+# Syntax Coloring Map For Qtouch
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Arduino_APA102	KEYWORD1
+
+leds	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+end	KEYWORD2
+show	KEYWORD2
+clear	KEYWORD2
+setPixelColor	KEYWORD2
+fill	KEYWORD2
+setBrightness	KEYWORD2
+setCurrent	KEYWORD2
+getLeds	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+Color	LITERAL1
