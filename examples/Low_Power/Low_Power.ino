@@ -29,7 +29,7 @@ void setup() {
   leds.show();
 
   delay(2500);  
-  // Brigtness doesnt change the Max Current, you controll the PWM duty cycle of the APA102
+  // Brigtness does not change the Max Current, you control the PWM duty cycle of the APA102
   // With the same Max current set in 2 LEDs, you can see different phyisical brightness
   // depending on the use of each or combination of the internal rgb LEDs wich each APA102 component has
   // You can see the effect:
