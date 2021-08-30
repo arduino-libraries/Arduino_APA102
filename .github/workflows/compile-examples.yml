@@ -49,7 +49,7 @@ jobs:
             # Install library dependencies.
           sketch-paths: |
             # Sketches to compile
-            - './examples/*'
+            - './examples/'
 
             
           enable-deltas-report: true
