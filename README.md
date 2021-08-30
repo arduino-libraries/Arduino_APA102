@@ -1,3 +1,5 @@
+[![Compiling](https://github.com/arduino-libraries/Arduino_APA102/actions/workflows/compile-examples.yml/badge.svg)](https://github.com/arduino-libraries/Arduino_APA102/actions/workflows/compile-examples.yml)
+
 # Arduino_APA102
 Drive rgb LEDs **APA102**, Serial LEDs connected with 2 pins.
 
