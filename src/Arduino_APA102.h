@@ -22,7 +22,7 @@
 
 #include "Arduino.h"
 
-class Arduino_APA102 {
+class Arduino_APA102{
 public:
   Arduino_APA102(uint8_t numLEDs, uint8_t newDataPin, uint8_t newClockPin);
   ~Arduino_APA102();
@@ -33,19 +33,17 @@ public:
   void show(void);
   void clear(void);
 
-
   void setPixelColor(uint16_t indexLed, uint32_t newColor);
   void setPixelColor(uint16_t indexLed, uint8_t red, uint8_t green, uint8_t blue);
-  void fill(uint32_t newColor , uint16_t startLed , uint16_t count );
+  void fill(uint32_t newColor, uint16_t startLed, uint16_t count);
 
   void setBrightness(uint8_t newBrightness);
   void setBrightness(uint8_t indexLed, uint8_t newBrightness);
 
   void setCurrent(uint8_t newCurrent);
   void setCurrent(uint8_t indexLed, uint8_t newCurrent);
-  
-  
-  uint32_t Color(uint8_t newRed, uint8_t newGreen, uint8_t newBlue) {
+
+  uint32_t Color(uint8_t newRed, uint8_t newGreen, uint8_t newBlue){
     return (uint32_t)(newRed << 16 | newGreen << 8 | newBlue);
   }
 
@@ -59,12 +57,11 @@ private:
   void _startFrame(void);
   void _endFrame(void);
 
-  uint8_t _numLeds ;
-  uint8_t _SCK_pin ;
-  uint8_t _SDA_pin ;
+  uint8_t _numLeds;
+  uint8_t _SCK_pin;
+  uint8_t _SDA_pin;
 
-  uint8_t *_pixel;	//5 bytes - R, G, B, Current, Btightness 
-  
+  uint8_t *_led; //5 bytes - R, G, B, Current, Btightnes
 };
 
 #endif
