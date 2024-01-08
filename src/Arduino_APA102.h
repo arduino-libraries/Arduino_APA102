@@ -46,7 +46,7 @@ public:
   
   
   uint32_t Color(uint8_t newRed, uint8_t newGreen, uint8_t newBlue) {
-    return (uint32_t)(newRed << 16 | newGreen << 8 | newBlue);
+    return (uint32_t)(((uint32_t)newRed) << 16 | ((uint32_t)newGreen) << 8 | newBlue);
   }
 
   uint16_t getLeds(){
